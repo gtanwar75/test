@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="test.js"></script>
+        <title>
+            Contact List
+        </title>
+    </head>
+    <body>
+        <div class="leftside">
+            <div class="form">
+                
+                <form onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off">
+                    <h5>New Contact</h5>
+                    <label>Name</label>
+                    <input type="text" name="Name" id="Name"><br/>
+                    <label>Mobile</label>
+                    <input type="number" name="Mobile" id="Mobile"><br/>
+                    
+                    <button id="conlist" onclick=()>Add</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="rightside">
+            <table class="table" id="contactDiary">
+                <tr class="myFunction()"">
+                    
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>delete</th>
+                    
+                  </tr>
+                <tbody>
+                      
+
+                </tbody>
+                
+            </table>
+                
+        </div>
+    </body>
+</html>
